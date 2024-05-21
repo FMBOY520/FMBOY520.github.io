@@ -1,0 +1,158 @@
+/* ---------- content ---------- */
+.content {
+    width: 100%;
+    height: 80%;
+    overflow: auto;
+}
+
+/* main-title */
+.main-title {
+    display: flex;
+    width: 100%;
+    height: 32%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-title h1 {
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.main-title h2 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.main-title h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* main-search */
+.main-search {
+    display: flex;
+    padding: 50px 0;
+    width: 100%;
+    height: 28%;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-search-box {
+    width: 50%;
+}
+
+.main-search form {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.main-search form input {
+    height: 100%;
+    outline: none;
+    border: none;
+}
+
+.main-search form input:nth-child(1) {
+    float: left;
+    padding: 0 15px;
+    width: 80%;
+    color: #fff;
+    font-size: 16px;
+    background-color: #ffffff50;
+}
+
+.main-search form input:nth-child(1)::placeholder {
+    color: #ececec;
+}
+
+.main-search form input:nth-child(2) {
+    float: right;
+    width: 20%;
+    color: #fff;
+    font-size: 18px;
+    background-color: #00000080;
+    cursor: pointer;
+}
+
+.main-search form input:nth-child(2):hover {
+    background-color: #00000095;
+}
+
+.main-search .main-search-list {
+    margin: 5px 0;
+    text-align: center;
+    background-color: #00000050;
+    border-radius: 10px;
+}
+
+.main-search a {
+    display: inline-block;
+    margin: 0 5px;
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+}
+
+.list-btn-on {
+    border-bottom: 2px solid #ff9f00;
+}
+
+/* main-tag */
+.main-tag {
+    width: 100%;
+    height: 40%;
+    overflow: auto;
+}
+
+.main-tag-list {
+    margin: 0 auto;
+    width: 65%;
+}
+
+.main-tag-list .box {
+    display: flex;
+    margin: 20px 0;
+    width: 100%;
+    height: 60px;
+    justify-content: space-around;
+    /* background-color: pink; */
+}
+
+.main-tag-list a {
+    display: flex;
+    margin: 0 10px;
+    width: 80px;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: .2s;
+}
+
+.main-tag-list a:hover {
+    transform: scale(1.2);
+    background-color: #ffffff20;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 10px;
+}
+
+.main-tag-list a img {
+    width: 25px;
+    height: 25px;
+}
+
+.main-tag-list a p {
+    width: 65px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

@@ -1,0 +1,34 @@
+/* ---------- footer ---------- */
+.footer {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10%;
+    text-align: center;
+    align-items: center;
+    background-color: #00000060;
+}
+
+.footer-box {
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+.footer-copyright {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-date {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.footer-version {
+    padding: 0 20px;
+    color: #888;
+    font-size: 12px;
+    text-align: right;
+}

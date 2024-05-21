@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -------------------- logo -------------------- -->
+    <link rel="shortcut icon" href="./public/favicon.ico">
+
+    <!-- -------------------- css -------------------- -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/FmboyHeader.css">
+    <link rel="stylesheet" href="./css/FmboyContent.css">
+    <link rel="stylesheet" href="./css/FmboyFooter.css">
+
+    <!-- -------------------- script -------------------- -->
+    <script src="../../res/vue/vue@2.6.10/vue.min.js"></script>
+
+    <!-- -------------------- title -------------------- -->
+    <title>FMBOY</title>
+
+</head>
+
+<body>
+
+    <!-- -------------------- main -------------------- -->
+    <main id="app">
+
+        <!-- ---------- head ---------- -->
+        <header class="header">
+            <div class="header-box">
+                <div class="header-box-list">
+                    <a href="../CommonWeb">我的收藏站</a>
+                </div>
+                <div class="header-box-user">
+                    <img src="./public/resources/image/FatCat.jpg" alt="">
+                    <span>FatCat-BOY</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- ---------- content ---------- -->
+        <div class="content">
+            <div class="main-title">
+                <div>
+                    <h1>FatCat-BOY 小栈</h1>
+                    <h2>全力以赴 奔赴远方</h2>
+                    <h3>Go all out to the distance</h3>
+                </div>
+            </div>
+
+            <div class="main-search">
+                <div class="main-search-box">
+                    <form :action="url" target="_blank">
+                        <input v-model="inpValue" :name="name" type="text" :placeholder="text">
+                        <input @click="searchBtn" type="submit" value="搜索">
+                    </form>
+                    <div class="main-search-list" @click="searchListBtn">
+                        <a href="javascript:;" class="list-btn-on">百度</a>
+                        <a href="javascript:;">Bing</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-tag">
+                <div class="main-tag-list">
+                    <div class="box" v-for="item in tagList">
+                        <a :href="item.url" v-for="item in item" target="_blank">
+                            <div>
+                                <img :src="item.img" alt="">
+                                <p>{{ item.text }}</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------- footer ---------- -->
+        <footer class="footer">
+            <div class="footer-box">
+                <p class="footer-copyright">© 2024 版权所有 FatCat-BOY</p>
+                <p class="footer-date">&lt;2024.01.01--2024.05.20&gt;</p>
+                <P class="footer-version">网站版本：1.0.6</P>
+            </div>
+        </footer>
+
+    </main>
+
+    <!-- -------------------- script -------------------- -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

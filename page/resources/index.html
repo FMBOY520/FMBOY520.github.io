@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/favicon.ico" type="image/x-icon">
+    <!-- -------------------- Title -------------------- -->
+    <title>Web资源</title>
+    <!-- -------------------- JavaScript -------------------- -->
+    <script src="../../res/vue/vue@2.6.10/vue.min.js"></script>
+    <script src="../../res/axios/axios@1.6.5/axios.min.js"></script>
+    <!-- -------------------- CSS -------------------- -->
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/content.css">
+    <!-- -------------------- 主题 -------------------- -->
+    <link rel="stylesheet" :href="ThemeUrl" id="Theme">
+    <script src="./js/Theme.js"></script>
+</head>
+
+<body>
+    <!-- -------------------- main -------------------- -->
+    <main id="app">
+
+        <div v-if="loading" class="loading">
+            <!-- <h1>资源加载中...</h1> -->
+            <div class="container">
+                <div class="dot dot-1"></div>
+                <div class="dot dot-2"></div>
+                <div class="dot dot-3"></div>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                    <defs>
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix"
+                                values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 21 -7" />
+                        </filter>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div v-else>
+
+            <!-- -------------------- 顶部信息 -------------------- -->
+            <div class="top">
+                <div class="nav">
+                    <div class="nav-left">
+                        <div class="user">
+                            <img src="./public/FatCat.jpg" alt="">
+                            <p>肥猫BOY</p>
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <div class="switchTheme">
+                            <span>主题切换：</span>
+                            <!-- <button @click="setTheme">切换</button> -->
+                            <label class="switch">
+                                <input v-model="Theme" type="checkbox" @change="btnSwitch">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="title">
+                    <h1 class="title-FM">肥 猫 B O Y</h1>
+                    <p class="title-FM2">FatCat-BOY</p>
+                    <h1 class="title-Res">W e b 前 端 资 源 仓 库</h1>
+                    <p class="title-Res2">Web front end resource repository</p>
+                </div>
+            </div>
+
+            <!-- -------------------- 内容信息 -------------------- -->
+            <div class="content">
+                <div class="content-list01">
+
+
+                    <!-- ---------- VUE / AXIOS ---------- -->
+                    <div class="content-list01-vue-axios">
+                        <h2 class="content-list01-vue-axios-title">JS源码 - VUE / AXIOS</h2>
+                        <div class="content-list01-vue-axios-res">
+                            <div class="left">
+                                <div class="fmck">
+                                    <h2>仓库版本</h2>
+                                </div>
+                                <div class="gfck">
+                                    <div>
+                                        <p>官方资源地址-CDN</p>
+                                        <p>( 访问可能会比较慢 )</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right">
+                                <div class="vue">
+                                    <div class="fmck">
+                                        <h4>vue</h4>
+                                        <div class="list">
+                                            <div class="list-vue" v-for="item in vueRes">
+                                                <p>版本号：<span>{{ item.version }}</span></p>
+                                                <p>开发环境版本：<a :href="item.developUrl" target="_blank">点击查看 vue.js</a></p>
+                                                <p>生产环境版本：<a :href="item.produceUrl" target="_blank">点击查看 vue.min.js</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gfck">
+                                        官方版本：
+                                        <a href="https://cdn.jsdelivr.net/npm/vue/" target="_blank">点击进入CDN官网</a>
+                                        <a href="javascript:;" @click="ResDownload('vue')">下载源码</a>
+                                    </div>
+                                </div>
+                                <div class="axios">
+                                    <div class="fmck">
+                                        <h4>axios</h4>
+                                        <div class="list">
+                                            <div class="list-axios" v-for="item in axiosRes">
+                                                <p>版本号：<span>{{ item.version }}</span></p>
+                                                <p>开发环境版本：<a :href="item.developUrl" target="_blank">点击查看 axios.js</a>
+                                                </p>
+                                                <p>生产环境版本：<a :href="item.produceUrl" target="_blank">点击查看
+                                                        axios.min.js</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="gfck">
+                                        官方版本：
+                                        <a href="https://cdn.jsdelivr.net/npm/axios/" target="_blank">点击进入</a>
+                                        <a href="javascript:;" @click="ResDownload('axios')">下载源码</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <!-- -------------------- 版权信息 -------------------- -->
+            <div class="bottom">
+                <p class="foot-copyright">© 2024 版权所有 FatCat-BOY</p>
+                <p class="foot-date">&lt;2024.01.01--2024.04.05&gt;</p>
+                <P class="foot-version">网站版本：1.0.2</P>
+            </div>
+
+        </div>
+
+    </main>
+    <!-- -------------------- JavaScript -------------------- -->
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

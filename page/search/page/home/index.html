@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -------------------- logo -------------------- -->
+    <link rel="shortcut icon" href="../../public/favicon.ico" type="image/x-icon">
+    <!-- -------------------- **** -------------------- -->
+
+
+    <!-- -------------------- css -------------------- -->
+    <link rel="stylesheet" href="../../css/common.css">
+    <link rel="stylesheet" href="./index.css">
+    <!-- -------------------- **** -------------------- -->
+
+
+    <!-- -------------------- title -------------------- -->
+    <title>FMBOY</title>
+    <!-- -------------------- **** -------------------- -->
+
+</head>
+
+<body>
+
+    <!-- -------------------- main -------------------- -->
+    <main id="app">
+
+        <!-- -------------------- head -------------------- -->
+        <div class="head">
+            <h1>肥猫主栈</h1>
+            <!-- 导航栏 -->
+            <div class="nav">
+                <a href="javascript:;" class="current">首页</a>
+                <a href="../about">关于栈长</a>
+            </div>
+            <!-- 搜索 -->
+            <form class="search" action="https://www.baidu.com/s" target="_blank">
+                <input class="input1" type="text" class="search-box" name="word" placeholder="百度搜索">
+                <input class="input2" type="submit" class="search-btn" value="搜索">
+            </form>
+            <!-- User -->
+            <div class="User">
+                <img src="../../public/resources/image/V.jpg" alt="">
+                <span>FatCat-BOY</span>
+            </div>
+        </div>
+        <!-- -------------------- **** -------------------- -->
+
+
+        <!-- -------------------- body -------------------- -->
+        <div class="body">
+
+            <!-- -------------------- 轮播图+内容 -------------------- -->
+            <div class="body-carousel">
+
+                <!-- -------------------- 轮播图 -------------------- -->
+                <div class="body-carousel-img">
+                    <div>
+                        <img v-for="(item, index) in imgList" :src="item.img" alt="图片加载失败">
+                    </div>
+                </div>
+                <!-- -------------------- 内容 -------------------- -->
+                <div class="body-carousel-content">
+                    <div class="left">
+                        <div>
+                            <h4>MY常用站</h4>
+                            <ul>
+                                <li v-for="(item,index) in commonList">
+                                    <a :href="item.url" target="_blank">{{item.text}}<span>&gt;</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <h4>工具</h4>
+                        <ul>
+                            <li v-for="(item,index) in toolsList">
+                                <a :href="item.url" target="_blank">{{item.text}}<span>&gt;</span></a>
+                            </li>
+                        </ul>
+                        <a href="../CommonWeb" style="display: inline-block;">查看更多</a>
+                    </div>
+                </div>
+            </div>
+            <!-- -------------------- **** -------------------- -->
+
+            <br><br>
+            <hr>
+            <h2>😎😎😎😎</h2>
+
+        </div>
+        <!-- -------------------- **** -------------------- -->
+
+
+        <!-- -------------------- foot -------------------- -->
+        <div class="foot">
+            <p class="foot-copyright">© 2024 版权所有 FatCat-BOY</p>
+            <p class="foot-date">&lt;2024.01.01--2024.01.20&gt;</p>
+        </div>
+        <!-- -------------------- **** -------------------- -->
+
+    </main>
+    <!-- -------------------- **** -------------------- -->
+
+
+    <!-- -------------------- script -------------------- -->
+    <script src="https://FMBOY.gitee.io/res/vue/vue@2.7.15/vue.js"></script>
+    <script src="./index.js"></script>
+    <!-- -------------------- **** -------------------- -->
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+/* -------------------- **** -------------------- */
+/* -------------------- main -------------------- */
+/* -------------------- body -------------------- */
+.body {
+    height: 600px;
+    overflow: hidden;
+}
+
+.body-title {
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 450px;
+    padding: 20px;
+    border-bottom: 5px solid #3bc08b;
+}
+
+.body-contact {
+    width: 100%;
+    padding: 25px 0;
+    text-align: center;
+    background-color: #c88200;
+    overflow: hidden;
+    position: relative;
+}
+
+.body-contact p {
+    margin: 20px;
+}
+
+.body-contact p:nth-child(1) {
+    font-size: 40px;
+}
+
+.body-contact p:nth-child(2) {
+    font-size: 25px;
+}
+
+.body-contact img {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 360px;
+}
+
+
+/* -------------------- **** -------------------- */
+/* ---------------------------------------------- */

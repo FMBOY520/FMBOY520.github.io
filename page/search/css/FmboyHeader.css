@@ -1,0 +1,56 @@
+/* ---------- head ---------- */
+.header {
+    display: flex;
+    padding: 0 20px;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    background-color: #00000020;
+}
+
+.header-box {
+    width: 100%;
+    height: 50px;
+}
+
+.header-box-list,
+.header-box-user {
+    height: 100%;
+}
+
+.header-box-list {
+    float: left;
+    width: 50%;
+}
+
+.header-box-list a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 15px;
+    background-color: #55555550;
+    border-radius: 10px;
+}
+
+.header-box-list a:hover {
+    color: #ff9f00;
+    background-color: #99999950;
+}
+
+.header-box-user {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
+.header-box-user img {
+    height: 100%;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.header-box-user span {
+    margin: 0 5px;
+    font-size: 20px;
+    font-weight: 600;
+}

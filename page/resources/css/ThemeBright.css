@@ -1,0 +1,88 @@
+/* ********** 亮 ********** */
+
+/* 字体颜色 */
+* {
+    color: #1a1a1a;
+    transition: .5s;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+/* -------------------- top -------------------- */
+.top .nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+
+/* -------------------- content -------------------- */
+.content-list01 {
+    border: 1px solid #dddddd;
+}
+
+.content-list01-vue-axios-title {
+    background-color: #eeeeee;
+}
+
+.content-list01-vue-axios-res .left .fmck {
+    background-color: #dddddd;
+}
+
+.content-list01-vue-axios-res .left .gfck {
+    background-color: #e5e5e5;
+}
+
+.content-list01-vue-axios-res .right .vue .fmck .list-vue {
+    border: 1px solid #cccccc;
+}
+
+.content-list01-vue-axios-res .right .vue .fmck .list-vue a {
+    color: #41b883;
+    background-color: #f6f6f6;
+    border: 1px solid #cdcdcd;
+}
+
+.content-list01-vue-axios-res .right .vue .gfck a {
+    background-color: #f0f0f0;
+}
+
+.content-list01-vue-axios-res .right .axios .fmck .list-axios {
+    border: 1px solid #cccccc;
+}
+
+.content-list01-vue-axios-res .right .axios .fmck .list-axios a {
+    color: #6a3ee7;
+    background-color: #f6f6f6;
+    border: 1px solid #cdcdcd;
+}
+
+.content-list01-vue-axios-res .right .axios .gfck a {
+    background-color: #f0f0f0;
+}
+
+
+/* -------------------- bottom -------------------- */
+.bottom {
+    background-color: #ffffff;
+    border-top: 1px solid #e7e7e7;
+}
+
+.bottom .foot-version {
+    color: #888888;
+}
+
+/* --------------------侧边滚动条-------------------- */
+/* 设置滚动条的宽度和背景色 */
+::-webkit-scrollbar {
+    width: 10px;
+    margin-bottom: 20px;
+    background-color: #fcfcfc;
+}
+
+/* 设置滚动条的滑块颜色和形状 */
+::-webkit-scrollbar-thumb {
+    background-color: #8b8b8b;
+    border-radius: 10px;
+}

@@ -1,0 +1,269 @@
+/* -------------------- **** -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+/* -------------------- body -------------------- */
+body {
+    color: #fff;
+    background-color: #000;
+    background-size: cover;
+}
+
+/* ---------------------------------------------- */
+
+
+/* -------------------- main -------------------- */
+/* -------------------- head -------------------- */
+.head {
+    margin: 10px auto;
+    padding: 0 40px;
+    width: 80%;
+    height: 100px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+}
+
+.head h1 {
+    float: left;
+    height: 100%;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 100px;
+}
+
+/* 导航栏 */
+.head .nav {
+    float: left;
+    height: 100%;
+    margin: 0 20px;
+}
+
+.head .nav a {
+    padding: 10px 20px;
+    margin: 0 5px;
+    color: #fff;
+    line-height: 100px;
+    background-color: rgba(250, 250, 250, 0.05);
+    border-radius: 10px;
+}
+
+.head .nav a:hover {
+    color: #ffa500;
+    background-color: rgba(250, 250, 250, 0.2);
+}
+
+.head .nav .current {
+    border-bottom: 2px solid #ffa500;
+}
+
+/* 搜索 */
+.head .search {
+    float: left;
+    width: 400px;
+    margin: 30px 0;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.head .search input {
+    padding: 0 15px;
+    height: 40px;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+
+.head .search .input1 {
+    float: left;
+    width: 80%;
+    background-color: rgba(250, 250, 250, 0.05);
+}
+
+.head .search .input1:hover {
+    background-color: rgba(250, 250, 250, 0.1);
+}
+
+.head .search .input2 {
+    float: right;
+    width: 20%;
+    background-color: rgba(250, 250, 250, 0.2);
+}
+
+.head .search .input2:hover {
+    background-color: rgba(250, 250, 250, 0.4);
+}
+
+.head .search input::placeholder {
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+/* User */
+.head .User {
+    float: right;
+    height: 100%;
+}
+
+.head .User img {
+    width: 60px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.head .User span {
+    font-size: 16px;
+    line-height: 100px;
+}
+
+/* -------------------- body -------------------- */
+.body {
+    margin: 10px auto;
+    width: 80%;
+    height: 800px;
+    background-color: #1a1a1a;
+    border-radius: 20px;
+}
+
+/* -------------------- foot -------------------- */
+.foot {
+    padding: 20px 50px;
+    width: 100%;
+    background-color: #1a1a1a;
+}
+
+.foot-copyright {
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.foot-date {
+    margin: 20px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* -------------------- **** -------------------- */
+/* ---------------------------------------------- */
+
+/* 手机端 */
+@media screen and (max-width:650px) {
+
+    .body {
+        margin: 10px 0;
+        width: 100%;
+        height: 800px;
+        background-color: #1a1a1a;
+        border-radius: 20px;
+    }
+
+    .head {
+        margin: 0;
+        padding: 20px;
+        width: 100%;
+        height: 100%;
+        background-color: #1a1a1a;
+        border-radius: 0;
+    }
+
+    .head h1 {
+        float: none;
+        text-align: center;
+        height: 100%;
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 100px;
+    }
+
+    /* 导航栏 */
+    .head .nav {
+        float: none;
+        height: 100%;
+        margin: 0;
+        /* background-color: #ffa500; */
+    }
+
+    .head .nav a {
+        padding: 10px 20px;
+        margin: 0 10px;
+        color: #fff;
+        line-height: 100px;
+        background-color: rgba(250, 250, 250, 0.05);
+        border-radius: 10px;
+    }
+
+    .head .nav a:hover {
+        color: #ffa500;
+        background-color: rgba(250, 250, 250, 0.2);
+    }
+
+    .head .nav .current {
+        border-bottom: 2px solid #ffa500;
+    }
+
+    /* 搜索 */
+    .head .search {
+        float: none;
+        width: 100%;
+        margin: 0;
+        border: 2px solid #fff;
+        border-radius: 10px;
+    }
+
+    .head .search input {
+        padding: 0 15px;
+        height: 40px;
+        outline: none;
+        border: none;
+        color: #fff;
+    }
+
+    .head .search .input1 {
+        float: left;
+        width: 80%;
+        background-color: rgba(250, 250, 250, 0.05);
+    }
+
+    .head .search .input1:hover {
+        background-color: rgba(250, 250, 250, 0.1);
+    }
+
+    .head .search .input2 {
+        float: right;
+        width: 20%;
+        background-color: rgba(250, 250, 250, 0.2);
+    }
+
+    .head .search .input2:hover {
+        background-color: rgba(250, 250, 250, 0.4);
+    }
+
+    .head .search input::placeholder {
+        font-size: 14px;
+        color: #5d5d5d;
+    }
+
+    /* User */
+    .head .User {
+        display: none;
+        float: none;
+        height: 100%;
+    }
+
+    .head .User img {
+        width: 50px;
+        border-radius: 50%;
+        vertical-align: middle;
+    }
+
+    .head .User span {
+        font-size: 16px;
+        line-height: 100px;
+    }
+}
